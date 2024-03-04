@@ -1,0 +1,151 @@
+@import 'TTLakes/stylesheet.css';
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'TT Lakes';
+}
+
+.main{
+background-color:white;
+width:320px;
+min-height:100vh;
+box-shadow: 16px 0 52px 0 #0E185033;
+position:fixed; 
+ left:0;
+padding:  24px;
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+
+.main__header{
+    width:100%;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.main__header-a:nth-child(1){
+    flex-grow: 2;
+}
+.main__header-a:nth-child(2){
+    flex-grow: 7;
+}
+
+.main__header-burger{
+    display: block;
+    width:40px;
+    height:40px;
+    background-image: url(icon/burger.svg);
+
+}
+.main__header-group{
+    display: block;
+    width:98px;
+    height:52px;
+    background-image:url(icon/Group.svg)
+}
+.main__header-search{
+    display: block;
+    width:40px;
+    height:40px;
+    background-image: url(icon/search.svg);
+}
+.main__list{
+    align-self: flex-start;
+}
+.main__list-li{
+    padding-bottom:32px;
+    list-style-type: none;
+}
+.main__list-a{
+    font-size: 16px;
+    text-decoration: none;
+    color:black;
+    position:relative;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.main__list-a:hover{
+    opacity:0.7
+}
+.main__list-a:before{
+    content:'';
+    border-right:4px solid #41F6D7;
+    box-shadow: 0 0 5px 1px black;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    height:120%;
+    left:-24px;
+    opacity: 0;
+    transition-duration: 1s;
+    transition-property: all;
+      
+}
+.main__list-a:hover::before{
+    opacity: 1;
+}
+
+.main__contacts{
+    align-self: flex-end;
+}
+
+.main__contacts--icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:10px 0;
+}
+.main__contansts-chatcopy{
+    display: block;
+    width:40px;
+    height:40px;
+    background-image: url(icon/chatcopy.svg);
+}
+.main__contansts-chat{
+    display: block;
+    width:40px;
+    height:40px;
+    background-image: url(icon/chat.svg);
+}
+.main__contansts-profile{
+    display: block;
+    width:40px;
+    height:40px;
+    background-image: url(icon/profile.svg);
+}
+.main__contacts--icon span:hover{
+    transform:scale(1.1)
+}
+.main__contacts--email{
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding:10px 0;
+}
+.main__contacts--tel{
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    font-weight: 700;
+}
+.main__contacts-lang{
+    padding-top:40px;
+   
+}
+.main__contacts-a{
+    text-decoration: none;
+    color:black;
+}
+.main__contacts-a:hover{
+    opacity: 0.7;
+}
